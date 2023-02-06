@@ -9,11 +9,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/tailwind.output.css" />
+    <link href="/dist/output.css" rel="stylesheet">
     <script
       src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
       defer
     ></script>
     <script src="./assets/js/init-alpine.js"></script>
+    <script src="./path/to/flowbite/dist/flowbite.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
   </head>
   <body>
     <div
@@ -985,8 +989,8 @@
             </h2>
             <!-- CTA -->
             <a
-              class="flex items-center justify-between p-4 mb-8 text-sm font-semibold text-purple-100 bg-purple-600 rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple"
-              href="https://github.com/estevanmaito/windmill-dashboard"
+              class="flex items-center justify-between p-4 mb-4 text-sm font-semibold text-purple-100 bg-purple-600 rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple"
+              href="#"
             >
               <div class="flex items-center">
                 <svg
@@ -1168,8 +1172,191 @@
                 </p>
               </div>
             </div> -->
+
+            <!-- <a
+              class="flex items-center justify-between p-4 mb-8 text-sm font-semibold text-purple-100 bg-purple-600 rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple"
+              href="https://github.com/estevanmaito/windmill-dashboard"
+            >
+              <div class="flex items-center">
+                <svg
+                  class="w-5 h-5 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  ></path>
+                </svg>
+                <span>Ici vous pouvez voir les notes de vos étudiants et faire des choix qui vont vous mener à l'onglet Insertion de notes</span>
+              </div> -->
+              <!-- <span>View more &RightArrow;</span> -->
+            <!-- </a> -->
+
+            <h3
+              class="my-6 mb-8 text-center text-2xl font-semibold text-gray-700 dark:text-gray-200"
+            >
+              Classe ...
+            </h3>
+
+            <!-- Start the tables -->
+            <div id="accordion-collapse" data-accordion="collapse"  >
+              <h2 id="accordion-collapse-heading-1" >
+                <button type="button" class=" flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-purple-600 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-1" aria-expanded="false" aria-controls="accordion-collapse-body-1">
+                  <span class=" dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800"> Mathematiques</span>
+                  <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+              </h2>
+              <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                <div class="p-5 font-light border border-b-0 border-purple-600 dark:border-gray-700 dark:bg-gray-900">
+                  <table class="w-full border-separate border boder  whitespace-no-wrap">
+                    <thead>
+                        <div class="px-6 my-6">
+                          <button
+                            class="flex items-center justify-between px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
+                          >
+                            <a href="forms.html">Insérer des notes</a>
+                            <span class="ml-2" aria-hidden="true">+</span>
+                          </button>
+                        </div>
+                      <tr class="text-xs font-semibold tracking-wide text-left text-white uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-white dark:bg-purple-600 bg-purple-600">
+                        <th  class="px-4 py-3 border-separate border">Etudiants</th>
+                        <th  class="px-4 py-3 border-separate border">Inter1</th>
+                        <th  class="px-4 py-3 border-separate border">Inter2</th>
+                        <th  class="px-4 py-3 border-separate border">Inter3</th>
+                        <th  class="px-4 py-3 border-separate border">Devoir1</th>
+                        <th  class="px-4 py-3 border-separate border">Devoir2</th>
+                        <th  class="px-4 py-3 border-separate border">Total</th>
+                        <th  class="px-4 py-3 border-separate border">Moyenne</th>
+                      </tr>
+                    </thead>
+                    <tbody
+                      class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800"
+                    >
+                      <tr class="text-black border-separate border dark:text-white">
+                        <td class="px-4 py-3 border-separate border">1</td>
+                        <td class="px-4 py-3 border-separate border">2</td>
+                        <td class="px-4 py-3 border-separate border">3</td>
+                        <td class="px-4 py-3 border-separate border">4</td>
+                        <td class="px-4 py-3 border-separate border">5</td>
+                        <td class="px-4 py-3 border-separate border">6</td>
+                        <td class="px-4 py-3 border-separate border">7</td>
+                        <td class="px-4 py-3 border-separate border">8</td>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <h2 id="accordion-collapse-heading-2">
+                <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-purple-600 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+                  <span>Anglais </span>
+                  <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+              </h2>
+              <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                <div class="p-5 font-light border border-b-0 border-purple-600 dark:border-gray-700">
+                  <table class="w-full border-separate border boder  whitespace-no-wrap">
+                    <thead>
+                        <div class="px-6 my-6">
+                          <button
+                            class="flex items-center justify-between px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
+                          >
+                            <a href="forms.html">Insérer des notes</a>
+                            <span class="ml-2" aria-hidden="true">+</span>
+                          </button>
+                        </div>
+                      <tr class=" bg-purple-600 text-xs font-semibold tracking-wide text-left text-white uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-white dark:bg-purple-600">
+                        <th  class="px-4 py-3 border-separate border">Etudiants</th>
+                        <th  class="px-4 py-3 border-separate border">Inter1</th>
+                        <th  class="px-4 py-3 border-separate border">Inter2</th>
+                        <th  class="px-4 py-3 border-separate border">Inter3</th>
+                        <th  class="px-4 py-3 border-separate border">Devoir1</th>
+                        <th  class="px-4 py-3 border-separate border">Devoir2</th>
+                        <th  class="px-4 py-3 border-separate border">Total</th>
+                        <th  class="px-4 py-3 border-separate border">Moyenne</th>
+                      </tr>
+                    </thead>
+                    <tbody
+                      class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800"
+                    >
+                      <tr class="text-black border-separate border dark:text-white">
+                        <td class="px-4 py-3 border-separate border">1</td>
+                        <td class="px-4 py-3 border-separate border">2</td>
+                        <td class="px-4 py-3 border-separate border">3</td>
+                        <td class="px-4 py-3 border-separate border">4</td>
+                        <td class="px-4 py-3 border-separate border">5</td>
+                        <td class="px-4 py-3 border-separate border">6</td>
+                        <td class="px-4 py-3 border-separate border">7</td>
+                        <td class="px-4 py-3 border-separate border">8</td>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <h2 id="accordion-collapse-heading-3">
+                <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-a-0 border-purple-600 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+                  <span>Informatique</span>
+                  <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+              </h2>
+              <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                <div class="p-5 font-light border border-a-0 border-purple-600 dark:border-gray-700">
+                  <table class="w-full border-separate border boder  whitespace-no-wrap">
+                    <thead>
+                        <div class="px-6 my-6">
+                          <button
+                            class="flex items-center justify-between px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
+                          >
+                            <a href="forms.html">Insérer des notes</a>
+                            <span class="ml-2" aria-hidden="true">+</span>
+                          </button>
+                        </div>
+                      <tr class=" bg-purple-600 text-xs font-semibold tracking-wide text-left text-white uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-white dark:bg-purple-600">
+                        <th  class="px-4 py-3 border-separate border">Etudiants</th>
+                        <th  class="px-4 py-3 border-separate border">Inter1</th>
+                        <th  class="px-4 py-3 border-separate border">Inter2</th>
+                        <th  class="px-4 py-3 border-separate border">Inter3</th>
+                        <th  class="px-4 py-3 border-separate border">Devoir1</th>
+                        <th  class="px-4 py-3 border-separate border">Devoir2</th>
+                        <th  class="px-4 py-3 border-separate border">Total</th>
+                        <th  class="px-4 py-3 border-separate border">Moyenne</th>
+                      </tr>
+                    </thead>
+                    <tbody
+                      class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800"
+                    >
+                      <tr class="text-black border-separate border dark:text-white">
+                        <td class="px-4 py-3 border-separate border">1</td>
+                        <td class="px-4 py-3 border-separate border">2</td>
+                        <td class="px-4 py-3 border-separate border">3</td>
+                        <td class="px-4 py-3 border-separate border">4</td>
+                        <td class="px-4 py-3 border-separate border">5</td>
+                        <td class="px-4 py-3 border-separate border">6</td>
+                        <td class="px-4 py-3 border-separate border">7</td>
+                        <td class="px-4 py-3 border-separate border">8</td>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- <h2 id="accordion-collapse-heading-3">
+                <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+                  <span>What are the differences between Flowbite and Tailwind UI?</span>
+                  <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+              </h2>
+              <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                  <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                    <li><a href="https://flowbite.com/pro/" class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+                    <li><a href="https://tailwindui.com/" rel="nofollow" class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                  </ul>
+                </div>
+              </div> -->
+            </div>
+
+
           </div>
-          <footer class="text-center" style="margin-top: 30px;">RII-GIT EPAC © Copyright 2022</footer>
+          <footer class="text-center dark:text-white" style="margin: 300px auto 30px auto;">RII-GIT EPAC © Copyright 2022</footer>
         </main>
       </div>
     </div>
