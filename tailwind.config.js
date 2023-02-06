@@ -1,9 +1,11 @@
+/* @type {import('tailwindcss').Config} */
+
 const defaultTheme = require('tailwindcss/defaultTheme')
 const plugin = require('tailwindcss/plugin')
-const Color = require('color')
+const Color = require('color-name')
 
 module.exports = {
-  purge: ['public/**/*.html'],
+  content: ["./src/main/resources/templates/**/*.{html,js}"],
   theme: {
     themeVariants: ['dark'],
     customForms: (theme) => ({
@@ -216,3 +218,4 @@ module.exports = {
     }),
   ],
 }
+
