@@ -1,5 +1,5 @@
-package com.java_project.gestion_note.model;
+// package com.java_project.gestion_note.model;
 
-public interface AdminRepository {
+// public interface AdminRepository {
 
-}
+// }
