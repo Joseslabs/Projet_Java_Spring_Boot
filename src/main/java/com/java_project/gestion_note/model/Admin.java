@@ -12,7 +12,7 @@ import jakarta.persistence.Table;
 public class Admin {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private long id;
 	
 	@Column(length = 20)
 	private String username;

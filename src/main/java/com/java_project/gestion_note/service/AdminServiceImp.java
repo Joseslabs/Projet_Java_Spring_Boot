@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.java_project.gestion_note.model.Admin;
-import com.java_project.gestion_note.model.AdminRepository;
+import com.java_project.gestion_note.repository.AdminRepository;
 
 @Service
 public class AdminServiceImp implements AdminService {
@@ -12,8 +12,8 @@ public class AdminServiceImp implements AdminService {
 	private AdminRepository adminRepository;
 	
 	@Override
-	public Admin read(String username) {
+	public Admin read(long id) {
 		// TODO Auto-generated method stub
-		return adminRepository.findAll();
+		return adminRepository.findById(id).get();
 	}
 }
