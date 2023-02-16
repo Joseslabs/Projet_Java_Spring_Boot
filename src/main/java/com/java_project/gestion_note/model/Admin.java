@@ -13,7 +13,7 @@ public class Admin {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
-	
+
 	@Column(length = 20)
 	private String username;
 	
@@ -31,6 +31,14 @@ public class Admin {
 
 	public void setId(long id) {
 		this.id = id;
+	}
+	
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getUsername() {
