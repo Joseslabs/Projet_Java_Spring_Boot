@@ -989,7 +989,7 @@
             <!-- CTA -->
             <a
               class="flex items-center justify-between p-4 mb-8 text-sm font-semibold text-purple-100 bg-purple-600 rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple"
-              href="https://github.com/estevanmaito/windmill-dashboard"
+              href="#"
             >
               <div class="flex items-center">
                 <svg
@@ -1015,15 +1015,16 @@
                 <div>05</div>
               </div> -->
               <div class="grid grid-cols-3 gap-4">
-                <div class="">Nom de l'eleve:</div>
+                <div class="">Nom de l'eleve :</div>
                 <div></div>
                 <div></div>
-                <div>Prenom  de l'eleve:</div>
+                <div>Prenom(s)  de l'eleve :</div>
                  <div></div>
-                 <div>Classe:</div>
-                 <div>Date de Naissance:</div>
+                 <div>Classe :</div>
+                 <div>Date de Naissance :</div>
                  <div></div>
                  <div></div>
+                 <div>Année scolaire :</div>
               </div>
             </section>
           <section  class="py-3 ">
@@ -1031,7 +1032,8 @@
               <thead>
                 <tr class="bg-blue-100 text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                   <th rowspan="4" class="px-4 py-3 border-separate border">Matiere</th>
-                  <th colspan="8" class="px-4 py-3 border-separate border">notes</th>     
+                  <th colspan="8" class="px-4 py-3 border-separate border">notes</th>
+                  <th rowspan="4" class="px-4 py-3 border-separate border">Coef</th>     
                   <th rowspan="4" class="px-4 py-3 border-separate border">Total</th>
                   <th rowspan="4" class="px-4 py-3 border-separate border">Moyenne</th>
                 </tr> 
@@ -1060,6 +1062,36 @@
                   <th  class="px-4 py-3">Devoir</th>
                   <th ></th>
                   <th ></th>                  -->
+                </tr>
+                <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800" style="border: 1px solid;">
+                  <th colspan="" class="px-4 py-3 border-separate border">Mathematiques</th>
+                  <th colspan="" class="px-4 py-3 border-separate border"> </th>
+                  <th colspan="" class="px-4 py-3 border-separate border"> </th>
+                  <th colspan="" class="px-4 py-3 border-separate border"> </th>
+                  <th colspan="" class="px-4 py-3 border-separate border"> </th>
+                  <th colspan="" class="px-4 py-3 border-separate border"> </th>
+                  <th rowspan="1" colspan="4" class="px-4 py-3 border-separate border"> </th>
+                  <th rowspan="1" class="px-4 py-3 border-separate border"> </th>
+                </tr>
+                <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800" style="border: 1px solid;">
+                  <th colspan="" class="px-4 py-3 border-separate border">Anglais</th>
+                  <th colspan="" class="px-4 py-3 border-separate border"> </th>
+                  <th colspan="" class="px-4 py-3 border-separate border"> </th>
+                  <th colspan="" class="px-4 py-3 border-separate border"> </th>
+                  <th colspan="" class="px-4 py-3 border-separate border"> </th>
+                  <th colspan="" class="px-4 py-3 border-separate border"> </th>
+                  <th rowspan="1" colspan="4" class="px-4 py-3 border-separate border"> </th>
+                  <th rowspan="1" class="px-4 py-3 border-separate border"> </th>
+                </tr>
+                <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800" style="border: 1px solid;">
+                  <th colspan="" class="px-4 py-3 border-separate border">Informatique</th>
+                  <th colspan="" class="px-4 py-3 border-separate border"> </th>
+                  <th colspan="" class="px-4 py-3 border-separate border"> </th>
+                  <th colspan="" class="px-4 py-3 border-separate border"> </th>
+                  <th colspan="" class="px-4 py-3 border-separate border"> </th>
+                  <th colspan="" class="px-4 py-3 border-separate border"> </th>
+                  <th rowspan="1" colspan="4" class="px-4 py-3 border-separate border"> </th>
+                  <th rowspan="1" class="px-4 py-3 border-separate border"> </th>
                 </tr>
               </thead>
               <tbody
@@ -1109,7 +1141,7 @@
               >
               <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                 <th class="px-4 py-3 border-separate border"> /20</th>
-                <th class="px-4 py-3 border-separate border"> </th> 
+                <th class="px-4 py-3 border-separate border"> ...</th> 
               </tr> 
               </tbody>
             </table>
@@ -1125,7 +1157,7 @@
                 class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800"
               >
               <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
-                <th class="px-4 py-3 border-separate border"> </th> 
+                <th class="px-4 py-3 border-separate border"> ... </th> 
               </tr> 
               </tbody>
             </table>
@@ -1231,7 +1263,7 @@
               </div>
             </div> -->
           </div>
-          <footer class="text-center dark:text-white" style="margin: 670px auto 30px auto;">RII-GIT EPAC © Copyright 2022</footer>
+          <footer class="text-center dark:text-white" style="margin: 150px auto 10px auto;">RII-GIT EPAC © Copyright 2022</footer>
         </main>
       </div>
     </div>
